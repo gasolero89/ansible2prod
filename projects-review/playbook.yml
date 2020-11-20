@@ -9,13 +9,7 @@
       yum:
         name: apache2
         state: latest
-
-    - name: Enable and start apache
-      service:
-        name: apache2
-        enabled: false
-        state: started
-  
+    
     - name: Install firewalld
       yum:
         name: firewalld
